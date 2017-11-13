@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas</title>
+</head>
+<body style="margin:0;box-sizing: border-box;width: 100%;overflow: hidden;">
+	<div style="width:100%;height:50%;position:relative;">
+	<canvas id="app" style="position:relative;">
+	</canvas>
+	<button id="button-reset" style="position:absolute;top:0;left:0;right:0;bottom:0;width:200px;height:50px;margin:auto;display: none" onClick="new exampleGame().main()">Reset</button>
+	</div>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="style.js"></script>
+<script type="text/javascript">
+	$("#button-reset").on("click",function(){
+		$(this).hide();
+	});
+</script>
+</body>
+</html>
